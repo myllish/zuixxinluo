@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⭐星落 SMP - Minecraft服务器官网</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>⭐ 星落 SMP</h1>
+    <div class="subtitle">Minecraft生存多人服务器</div>
+
+    <!-- Java版 -->
+    <div class="server-card">
+        <div class="title-row">
+            <div>
+                <span class="tag-java">Java版</span>
+                <span class="version-tag">支持 1.8 ~ 26.3</span>
+            </div>
+            <div>
+                <span class="status-dot loading" id="java-dot"></span>
+                <span id="java-status-text">查询中...</span>
+            </div>
+        </div>
+        <div class="ip-wrap">
+            <div class="ip-box" id="java-ip">xinluo.vemc.cc</div>
+            <button class="copy-btn" onclick="copyText('xinluo.vemc.cc')">复制IP</button>
+        </div>
+        <div class="motd-box">
+            <div class="motd-label">服务器 MOTD</div>
+            <div id="java-motd">加载中...</div>
+        </div>
+        <div class="info-row">
+            在线人数：<span id="java-players">‑</span>
+        </div>
+    </div>
+
+    <!-- 基岩版 -->
+    <div class="server-card">
+        <div class="title-row">
+            <div>
+                <span class="tag-be">基岩版</span>
+                <span class="version-tag">支持 26.30 ~ 26.51</span>
+            </div>
+            <div>
+                <span class="status-dot loading" id="be-dot"></span>
+                <span id="be-status-text">查询中...</span>
+            </div>
+        </div>
+        <div class="ip-wrap">
+            <div class="ip-box" id="be-ip">xtdmc.top : 29201</div>
+            <button class="copy-btn" onclick="copyText('xtdmc.top:29201')">复制IP</button>
+        </div>
+        <div class="motd-box">
+            <div class="motd-label">服务器 MOTD</div>
+            <div id="be-motd">加载中...</div>
+        </div>
+        <div class="info-row">
+            在线人数：<span id="be-players">‑</span>
+        </div>
+    </div>
+    <div class="refresh-hint">服务器状态每60秒自动刷新</div>
+
+    <!-- QQ群 -->
+    <h2 class="section-title">💬 交流社群</h2>
+    <div class="qq-group-card">
+        <div class="qq-group-icon">🐧</div>
+        <div class="qq-group-info">
+            <h3>星落方块岛服务器〈交流〉②群</h3>
+            <p>获取更新公告、问题反馈、群文件资源下载</p>
+            <div class="qq-group-meta">
+                <span>群号：676475301</span>
+                <span>人数：222人</span>
+                <span>群文件：224项</span>
+            </div>
+        </div>
+        <a href="https://qm.qq.com/q/5CsrpCF1AI" target="_blank" class="qq-join-btn">加入QQ群</a>
+    </div>
+
+    <!-- 文件下载 -->
+    <h2 class="section-title">📦 文件下载中心</h2>
+    <div class="files-wrap">
+        <div class="file-card">
+            <div class="file-icon">📦</div>
+            <div class="file-info">
+                <h3>星落SMP 客户端整合包</h3>
+                <p>推荐模组、光影、资源包一键装好，开箱即玩</p>
+                <div class="file-meta">
+                    <span>版本：1.21.1 Fabric</span>
+                    <span>大小：~180MB</span>
+                </div>
+            </div>
+            <a href="#" class="file-download-btn">下载</a>
+        </div>
+        <div class="file-card">
+            <div class="file-icon">🎨</div>
+            <div class="file-info">
+                <h3>服务器配套资源包</h3>
+                <p>自定义方块纹理、UI、字幕，推荐加载</p>
+                <div class="file-meta">
+                    <span>兼容Java 1.8+</span>
+                    <span>大小：12MB</span>
+                </div>
+            </div>
+            <a href="#" class="file-download-btn">下载</a>
+        </div>
+        <div class="file-card">
+            <div class="file-icon">📄</div>
+            <div class="file-info">
+                <h3>新手入门文档</h3>
+                <p>服务器规则、农场教程、常用指令汇总</p>
+                <div class="file-meta">
+                    <span>更新：2026-10</span>
+                    <span>格式：Markdown</span>
+                </div>
+            </div>
+            <a href="#" class="file-download-btn">查看</a>
+        </div>
+        <div class="file-card">
+            <div class="file-icon">✨</div>
+            <div class="file-info">
+                <h3>配套光影包</h3>
+                <p>轻量性能光影，低配电脑也能流畅运行</p>
+                <div class="file-meta">
+                    <span>支持 Iris / OptiFine</span>
+                    <span>大小：35MB</span>
+                </div>
+            </div>
+            <a href="#" class="file-download-btn">下载</a>
+        </div>
+    </div>
+
+    <!-- 注册教程 -->
+    <h2 class="section-title">📝 账号注册 & 登录教程</h2>
+    <div class="tutorial-box">
+        <p>本服务器使用AuthMe账号密码登录保护，进入服务器需要注册账号。</p>
+        <br>
+        <p><strong>🔐 首次进入服务器（注册账号）：</strong></p>
+        <p>在游戏聊天栏输入指令：<span class="cmd">/reg 你的密码 重复一遍密码</span></p>
+        <p>示例：<span class="cmd">/reg 123456 123456</span></p>
+        <p>⚠️ <strong>一定要记住密码，忘记密码概不负责！</strong></p>
+        <br>
+        <p><strong>🔑 下次登录服务器：</strong></p>
+        <p>聊天栏输入指令：<span class="cmd">/l 你的密码</span></p>
+        <p>示例：<span class="cmd">/l 123
